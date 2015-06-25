@@ -1,14 +1,15 @@
 import angular from 'angular';
 
+const notes = [
+  "attend Angular U",
+  "have fun writing Angular",
+  "Cheers",
+  "add more functionality",
+];
+
 class NotesService {
     constructor () {
-        // Stub a few default notes
-        this.notes = [
-          "attend Angular U",
-          "have fun writing Angular",
-          "Cheers",
-          "add more functionality",
-        ];
+        this.notes = notes;
     }
 
     add (note) {
