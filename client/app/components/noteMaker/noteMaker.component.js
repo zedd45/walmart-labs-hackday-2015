@@ -3,7 +3,7 @@
 import template from './noteMaker.html';
 import {NoteMakerController as controller} from './noteMaker.controller';
 
-let noteMakerComponent = () => {
+let NoteMakerComponent = () => {
     return {
         restrict: 'E',
         template,
@@ -12,4 +12,4 @@ let noteMakerComponent = () => {
     };
 };
 
-export {noteMakerComponent};
+export {NoteMakerComponent};

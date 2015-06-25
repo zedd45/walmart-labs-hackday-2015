@@ -1,10 +1,10 @@
 // using classes, we make the controller here
-class NotePanelController {
+class NoteController {
     constructor () {
-        this.notes = [];
+        // maybe add some functionality here later for controls on the note
     }
 }
 
-// noteMakerController.$inject = ['$scope'];
+// NoteController.$inject = ['$dependency'];
 
-export {NotePanelController};
+export {NoteController};

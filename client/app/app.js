@@ -5,12 +5,14 @@ import angular from 'angular';
 // we need to import
 // other angular modules and
 // register them him
-import {noteMaker} from './components/noteMaker/noteMaker';
-import common from './common/common';
+import {NoteMaker} from './components/noteMaker/noteMaker';
+import {NoteList} from './components/noteList/noteList';
+// import common from './common/common';
 import {NotesService} from './services/notesService';
 
 angular.module('app', [
-  noteMaker.name,
+  NoteMaker.name,
+  NoteList.name,
 ])
 .directive('app', ()=> {
   return {
@@ -19,6 +21,7 @@ angular.module('app', [
     template: `
       <div>
         <note-maker></note-maker>
+        <note-list></note-list>
       </div>
     `
   }

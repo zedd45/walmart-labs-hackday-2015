@@ -2,7 +2,8 @@ import angular from 'angular';
 
 class NotesService {
     constructor () {
-        this.notes = [];
+        // this.notes = [];
+        this.notes = ["hello", "hi"];
     }
 
     add (note) {

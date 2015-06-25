@@ -1,12 +1,13 @@
 // create our directive here
 // import the template, controller, and style
-import template from './notesPanel.html';
+import template from './note.html';
 
-let notesPanelComponent = () => {
+let NoteComponent = () => {
     return {
         restrict: 'E',
+        transclude: true,
         template,
     };
 };
 
-export {notesPanelComponent};
+export {NoteComponent};

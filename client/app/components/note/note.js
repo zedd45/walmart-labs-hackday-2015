@@ -1,9 +1,9 @@
 // the registration for our component
 import angular from 'angular';
-import {notePanelComponent as component} from './notePanel.component';
-import './notePanel.styl';
+import {noteComponent as component} from './note.component';
+import './note.styl';
 
-let notesPanel = angular.module('notesPanel', [])
-    .directive('notesPanel', component);
+let Note = angular.module('note', [])
+    .directive('note', component);
 
-export {notesPanel};
+export {Note};
