@@ -9,6 +9,9 @@ let NoteMakerComponent = () => {
         template,
         controller,
         controllerAs: 'vm',
+        // isolate scope so conflicting controllerAs properties
+        // don't cause issues with events not firing
+        scope: {},
     };
 };
 

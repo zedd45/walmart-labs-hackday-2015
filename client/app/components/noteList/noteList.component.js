@@ -11,6 +11,10 @@ let NoteListComponent = () => {
         template,
         controller,
         controllerAs: 'vm',
+        // replace: true,
+        // isolate scope so conflicting controllerAs properties
+        // don't cause issues with events not firing
+        scope: {},
     };
 };
 

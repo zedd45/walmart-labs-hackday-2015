@@ -7,6 +7,8 @@ let NoteComponent = () => {
         restrict: 'E',
         transclude: true,
         template,
+        // necessary as the extra DOM element causes a layout bug
+        replace: true,
     };
 };
 
