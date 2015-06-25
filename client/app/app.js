@@ -1,11 +1,14 @@
 import 'normalize.css';
 import './app.styl';
 import angular from 'angular';
+
 // we need to import
 // other angular modules and
 // register them him
+import noteMaker from './components/noteMaker/noteMaker';
+
 angular.module('app', [
-  // module dependencies here
+  'noteMaker'
 ])
 .directive('app', ()=> {
   return {
@@ -17,4 +20,4 @@ angular.module('app', [
       </div>
     `
   }
-})
+});
