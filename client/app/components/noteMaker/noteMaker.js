@@ -1,9 +1,9 @@
 // the registration for our component
 import angular from 'angular';
-import {noteMakerComponent} from './noteMaker.component';
+import {NoteMakerComponent as component} from './noteMaker.component';
 import './noteMaker.styl';
 
-let noteMaker = angular.module('noteMaker', [])
-    .directive('noteMaker', noteMakerComponent);
+let NoteMaker = angular.module('noteMaker', [])
+    .directive('noteMaker', component);
 
-export {noteMaker};
+export {NoteMaker};

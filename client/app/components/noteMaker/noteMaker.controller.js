@@ -1,16 +1,16 @@
 // using classes, we make the controller here
 // with a createNote method
 class NoteMakerController {
-    constructor () {
-        this.notes = [];
+    constructor (NotesService) {
+        this.NotesService = NotesService;
     }
 
     createNote () {
-        this.notes.push(this.newNote);
+        this.NotesService.add(this.newNote);
         this.newNote = "";
     }
 }
 
-// noteMakerController.$inject = ['$scope'];
+NoteMakerController.$inject = ['NotesService'];
 
 export {NoteMakerController};
