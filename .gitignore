@@ -1,4 +1,4 @@
-node_module
+node_modules
 client/bundle.js
 client/bundle.js.map
 *.log
