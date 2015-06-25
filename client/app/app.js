@@ -1,8 +1,23 @@
-let me = 'Chris';
+import 'normalize.css';
+import './app.styl';
+import angular from 'angular';
 
-function doStuff() {
-    alert(me);
-}
+// we need to import
+// other angular modules and
+// register them him
+import noteMaker from './components/noteMaker/noteMaker';
 
-doStuff();
-
+angular.module('app', [
+  'noteMaker'
+])
+.directive('app', ()=> {
+  return {
+    restrict: 'E',
+    replace: true,
+    template: `
+      <div>
+        <note-maker></note-maker>
+      </div>
+    `
+  }
+});

@@ -24,5 +24,9 @@ module.exports = {
           loader: 'css'
         }
       ]
+    },
+
+    stylus: {
+      use: [require('jeet')()]
     }
 };
