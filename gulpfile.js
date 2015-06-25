@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 var paths = {
     entry: './client/app/app.js',
     output: './client',
-    app: 'client/app/**/*.{js, html, styl}',
+    app: 'client/app/**/*.{js,html,styl}',
 };
 
 var webpackConfig = require('./webpack.config');
