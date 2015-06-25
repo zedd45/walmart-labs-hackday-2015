@@ -9,7 +9,7 @@ class NotesService {
         this.notes.push(note);
     }
 
-    remote (index) {
+    remove (index) {
         this.notes.splice(index, 1);
     }
 }
