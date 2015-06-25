@@ -4,3 +4,11 @@
     <button>add</button>
   </form>
 </div>
+
+<section class="note-maker-container">
+    <ul>
+        <li ng-repeat="note in vm.notes track by $index">
+            {{note}}
+        </li>
+    </ul>
+</section>

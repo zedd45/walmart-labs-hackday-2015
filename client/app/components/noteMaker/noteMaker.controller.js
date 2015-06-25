@@ -2,11 +2,12 @@
 // with a createNote method
 class NoteMakerController {
     constructor () {
-
+        this.notes = [];
     }
 
     createNote () {
-
+        this.notes.push(this.newNote);
+        this.newNote = "";
     }
 }
 
