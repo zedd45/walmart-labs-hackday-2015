@@ -9,7 +9,7 @@ We are building a prototype of [Google Keep](https://play.google.com/store/apps/
 
 # Installation 
 
-Install [Node JS](http://nodejs.org/), which is currently includes `npm`.
+Install [Node JS](http://nodejs.org/), which currently includes `npm`.
 
 ```
 npm i && npm run serve
