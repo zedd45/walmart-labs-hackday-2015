@@ -1,7 +1,8 @@
 {
-  "name": "ng-keep",
+  "name": "mweb-hack-day-2015",
   "version": "1.0.0",
-  "description": "Angular U ES6 Class",
+  "description": "Hack Day 2015 WML: mWeb Team",
+  "repository": "git@bitbucket.org:Zedd45/walmart-labs-hackday-2015.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,6 +27,7 @@
   },
   "dependencies": {
     "angular": "^1.4.1",
+    "angular-sanitize": "^1.4.1",
     "jeet": "^6.1.2",
     "normalize.css": "^3.0.3"
   }
