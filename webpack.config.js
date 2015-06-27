@@ -1,5 +1,4 @@
-// var path = require('path');
-// var webpack = require("webpack");
+var webpack = require("webpack");
 
 module.exports = {
     entry: "./client/app/app.js",
@@ -26,18 +25,14 @@ module.exports = {
         {
           test: /\.css$/,
           loader: 'css'
-        }
+        },
+        {
+            test: /annyang\.js$/,
+            // annyang needs the window context to detect which speech recog.
+            loader: "script!"
+        },
       ]
     },
-
-    // resolve: {
-    //     root: [path.join(__dirname, "bower_components")]
-    // },
-    // plugins: [
-    //     new webpack.ResolverPlugin(
-    //         new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
-    //     )
-    // ],
 
     stylus: {
       use: [require('jeet')()]
