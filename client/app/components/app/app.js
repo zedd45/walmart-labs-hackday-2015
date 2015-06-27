@@ -6,6 +6,7 @@ let App = () => {
       <div>
         <speech-recognition></speech-recognition>
         <club-listing></club-listing>
+        <product-listing></product-listing>
       </div>
     `
   }

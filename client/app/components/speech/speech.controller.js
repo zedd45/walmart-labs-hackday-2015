@@ -1,13 +1,12 @@
 import annyang from 'annyang';
 
 class SpeechController {
-    constructor (productsService, clubLocatorService) {
+    constructor (clubLocatorService) {
         const commands = {
             'show me *product': this.showProduct,
             'find a club': this.locateClub
         };
 
-        this.productsService = productsService;
         this.clubLocatorService = clubLocatorService;
 
         window.annyang.init(commands, false);
@@ -55,6 +54,6 @@ class SpeechController {
     }
 }
 
-SpeechController.$inject = ['ProductsService', 'ClubLocatorService']
+SpeechController.$inject = ['ClubLocatorService']
 
 export {SpeechController};

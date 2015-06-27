@@ -1,6 +1,8 @@
 <section class="sc-product">
-  <h2>{{product.n}}</h2>
-  <h4 ng-bind-html="product.sd"></h4>
-  <p>{{product.dp}}</p>
-  <button ng-click="products.addToCart(p)">buy now</button>
+  <div ng-repeat="prduct in pc.products">
+      <h2>{{product.n}}</h2>
+      <h4 ng-bind-html="product.sd"></h4>
+      <p>{{product.dp}}</p>
+      <button ng-click="products.addToCart(p)">buy now</button>
+  </div>
 </section>

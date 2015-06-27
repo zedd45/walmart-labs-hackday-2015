@@ -1,6 +1,12 @@
 class ClubLocatorService {
+
   constructor($http) {
     this.$http = $http;
+  }
+
+  getClubsNear () {
+    const url = 'app/services/clubs.json';
+    return this.$http.get(url);
   }
 
   /* even with m.samsclub.com in our host file, this won't work; need the api keys
@@ -19,12 +25,6 @@ class ClubLocatorService {
     return this.$http.get(url);
   }
   */
-
-  getClubsNear () {
-    const url = 'app/services/clubs.json';
-    return this.$http.get(url);
-  }
-
 }
 
 ClubLocatorService.$inject = ['$http'];

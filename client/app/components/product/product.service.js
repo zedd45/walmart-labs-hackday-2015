@@ -4,7 +4,8 @@ class ProductsService {
   }
 
   getProducts () {
-    const url = 'app/services/products.json';
+    // TODO: replace with product service from mWeb
+    const url = 'app/components/product/products.json';
     return this.$http.get(url);
   }
 }
