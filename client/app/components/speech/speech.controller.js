@@ -11,7 +11,7 @@ class SpeechController {
     }
 
     start () {
-        window.annyang.debug();
+        // window.annyang.debug();
         window.annyang.start();
     }
 

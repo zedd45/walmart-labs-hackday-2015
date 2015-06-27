@@ -7,7 +7,7 @@ let SpeechComponent = () => {
         template,
         // replace: true,
         controller,
-        controllerAs: 'sc',
+        controllerAs: 'speech',
     };
 };
 
