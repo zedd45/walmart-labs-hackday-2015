@@ -3,8 +3,8 @@ import annyang from 'annyang';
 class SpeechController {
     constructor () {
         const commands = {
-            'get :product': this.locateProduct,
-            'find :club near me': this.locateClub
+            'show me *product': this.showProduct,
+            'find a club near me': this.locateClub
         };
 
         window.annyang.init(commands, false);
@@ -33,7 +33,7 @@ class SpeechController {
         window.annyang.debug(false);
     }
 
-    locateProduct () {
+    showProduct () {
         debugger;
         // use the product service here to locate the product
     }
