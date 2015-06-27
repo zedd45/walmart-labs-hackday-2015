@@ -4,14 +4,14 @@ class ProductsController {
     this.products = products;
 
     this.productsService = productsService;
-    // TODO: this call should be tied to speech detection!
-    this.fetchProducts();
   }
 
   fetchProducts () {
     this.productsService.getProducts()
       .success(results => {
-        console.log('results: ', results);
+        if (__DEV__) {
+          console.log('results: ', results);
+        }
         // like backbone's `parse`; for rendering,
         // we only care about a subset of the properties ATG sends back :)
         this.products = results.p;
