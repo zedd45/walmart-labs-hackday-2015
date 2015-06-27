@@ -28,11 +28,17 @@ module.exports = {
         },
         {
             test: /annyang\.js$/,
-            // annyang needs the window context to detect which speech recog.
+            // annyang needs the window context to detect which speech recog. to use
             loader: "script?this=window"
         },
       ]
     },
+
+    plugins: [
+      new webpack.DefinePlugin({
+        __DEV__: JSON.stringify(JSON.parse(process.env.BUILD_DEV || 'true')),
+      }),
+    ],
 
     stylus: {
       use: [require('jeet')()]

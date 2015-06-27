@@ -1,0 +1,176 @@
+{
+    "Address1": "7147 GREENBACK LN.",
+    "City": "CITRUS HEIGHTS",
+    "ClubNumber": 4799,
+    "Events": [{
+        "Description1": "STYLE HOUSE",
+        "Description2": "",
+        "EndDate": "/Date(1435467600000-0500)/",
+        "EventType": "ShowCase Event",
+        "StartDate": "/Date(1434517200000-0500)/",
+        "Url": "#"
+    }, {
+        "Description1": "BAMBOO PILLOWS",
+        "Description2": "",
+        "EndDate": "/Date(1436677200000-0500)/",
+        "EventType": "ShowCase Event",
+        "StartDate": "/Date(1435726800000-0500)/",
+        "Url": "#"
+    }, {
+        "Description1": "MY OMEGA PAIN RELIEF",
+        "Description2": "",
+        "EndDate": "/Date(1436677200000-0500)/",
+        "EventType": "ShowCase Event",
+        "StartDate": "/Date(1435726800000-0500)/",
+        "Url": "#"
+    }, {
+        "Description1": "WESTERN EVENT",
+        "Description2": "",
+        "EndDate": "/Date(1437282000000-0500)/",
+        "EventType": "ShowCase Event",
+        "StartDate": "/Date(1435813200000-0500)/",
+        "Url": "#"
+    }, {
+        "Description1": "INDOOR & OUTDOOR POTTERY",
+        "Description2": "",
+        "EndDate": "/Date(1437886800000-0500)/",
+        "EventType": "ShowCase Event",
+        "StartDate": "/Date(1436418000000-0500)/",
+        "Url": "#"
+    }, {
+        "Description1": "HOT/COLD THERAPY",
+        "Description2": "",
+        "EndDate": "/Date(1437886800000-0500)/",
+        "EventType": "ShowCase Event",
+        "StartDate": "/Date(1436936400000-0500)/",
+        "Url": "#"
+    }, {
+        "Description1": "LAVEU",
+        "Description2": "",
+        "EndDate": "/Date(1439096400000-0500)/",
+        "EventType": "ShowCase Event",
+        "StartDate": "/Date(1438146000000-0500)/",
+        "Url": "#"
+    }, {
+        "Description1": "GOURMET DIP MIXES",
+        "Description2": "",
+        "EndDate": "/Date(1439096400000-0500)/",
+        "EventType": "ShowCase Event",
+        "StartDate": "/Date(1438232400000-0500)/",
+        "Url": "#"
+    }, {
+        "Description1": "SHARP SELECT KNIVES",
+        "Description2": "",
+        "EndDate": "/Date(1439096400000-0500)/",
+        "EventType": "ShowCase Event",
+        "StartDate": "/Date(1438232400000-0500)/",
+        "Url": "#"
+    }],
+    "Latitude": 38.68031,
+    "Longitude": -121.296,
+    "Manager": "",
+    "Messages": [],
+    "Name": "",
+    "PhoneNumber": "(916) 721-6499",
+    "PostalCode": "95621",
+    "Schedule": [{
+        "Details": [{
+            "Day": "Monday",
+            "EndTime": "20:30",
+            "StartTime": "10:00"
+        }, {
+            "Day": "Tuesday",
+            "EndTime": "20:30",
+            "StartTime": "10:00"
+        }, {
+            "Day": "Wednesday",
+            "EndTime": "20:30",
+            "StartTime": "10:00"
+        }, {
+            "Day": "Thursday",
+            "EndTime": "20:30",
+            "StartTime": "10:00"
+        }, {
+            "Day": "Friday",
+            "EndTime": "20:30",
+            "StartTime": "10:00"
+        }, {
+            "Day": "Saturday",
+            "EndTime": "20:30",
+            "StartTime": "09:00"
+        }, {
+            "Day": "Sunday",
+            "EndTime": "18:00",
+            "StartTime": "10:00"
+        }],
+        "Summary": "Monday - Friday: 10:00 a.m - 8:30 p.m.\nSaturday: 9:00 a.m - 8:30 p.m.\nSunday: 10:00 a.m - 6:00 p.m.\n",
+        "Type": "Standard"
+    }, {
+        "Details": [{
+            "Day": "Monday",
+            "EndTime": "10:00",
+            "StartTime": "07:00"
+        }, {
+            "Day": "Tuesday",
+            "EndTime": "10:00",
+            "StartTime": "07:00"
+        }, {
+            "Day": "Wednesday",
+            "EndTime": "10:00",
+            "StartTime": "07:00"
+        }, {
+            "Day": "Thursday",
+            "EndTime": "10:00",
+            "StartTime": "07:00"
+        }, {
+            "Day": "Friday",
+            "EndTime": "10:00",
+            "StartTime": "07:00"
+        }, {
+            "Day": "Saturday",
+            "EndTime": "09:00",
+            "StartTime": "07:00"
+        }, {
+            "Day": "Sunday",
+            "EndTime": "00:00",
+            "StartTime": "00:00"
+        }],
+        "Summary": "Monday - Friday: 7:00 a.m - 10:00 a.m\nSaturday: 7:00 a.m - 9:00 a.m\nSunday: Closed\n",
+        "Type": "Gold Key"
+    }],
+    "Services": [{
+        "PhoneNumber": "",
+        "ServiceID": 3
+    }, {
+        "PhoneNumber": "",
+        "ServiceID": 5
+    }, {
+        "PhoneNumber": "",
+        "ServiceID": 9
+    }, {
+        "PhoneNumber": "",
+        "ServiceID": 6
+    }, {
+        "PhoneNumber": "",
+        "ServiceID": 10
+    }, {
+        "PhoneNumber": "",
+        "ServiceID": 11
+    }, {
+        "PhoneNumber": "",
+        "ServiceID": 23
+    }, {
+        "PhoneNumber": "(916) 721-6450",
+        "ServiceID": 2
+    }, {
+        "PhoneNumber": "(916) 721-6512",
+        "ServiceID": 4
+    }, {
+        "PhoneNumber": "(916) 721-6527",
+        "ServiceID": 8
+    }, {
+        "PhoneNumber": "",
+        "ServiceID": 1
+    }],
+    "State": "CA"
+}

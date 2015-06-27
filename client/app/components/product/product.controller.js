@@ -17,6 +17,6 @@ class ProductController {
   }
 }
 
-ProductController.$inject = ['ProductService'];
+ProductController.$inject = ['ProductsService'];
 
 export {ProductController};

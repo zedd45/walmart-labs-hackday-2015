@@ -1,17 +1,22 @@
 import annyang from 'annyang';
 
 class SpeechController {
-    constructor () {
+    constructor (productsService, clubLocatorService) {
         const commands = {
             'show me *product': this.showProduct,
-            'find a club near me': this.locateClub
+            'find a club': this.locateClub
         };
+
+        this.productsService = productsService;
+        this.clubLocatorService = clubLocatorService;
 
         window.annyang.init(commands, false);
     }
 
     start () {
-        // window.annyang.debug();
+        if (__DEV__) {
+            this.debug();
+        }
         window.annyang.start();
     }
 
@@ -23,10 +28,8 @@ class SpeechController {
         window.annyang.abort();
     }
 
-    // TODO: remove dev elements with feature flags?
-    // https://github.com/petehunt/webpack-howto#6-feature-flags
     debug () {
-        window.annyang.debug(true);
+        window.annyang.debug(__DEV__);
     }
 
     stopDebug () {
@@ -39,10 +42,19 @@ class SpeechController {
     }
 
     locateClub () {
-        debugger;
-        // use a location service to get and store the geolocation
-        // use the club service to locate the club
+        let callback = this.getClubs.bind(this);
+        let position = navigator.geolocation && navigator.geolocation.getCurrentPosition(callback);
+    }
+
+    getClubs (location) {
+        let coords = location && location.coords;
+        this.clubLocatorService.getClubsNear(coords).success(function (data) {
+            debugger;
+            this.clubs = data;
+        });
     }
 }
+
+SpeechController.$inject = ['ProductsService', 'ClubLocatorService']
 
 export {SpeechController};

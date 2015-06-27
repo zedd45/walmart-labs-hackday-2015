@@ -8,4 +8,4 @@ let ProductList = () => {
     };
 };
 
-export {MotionCanvas};
+export {ProductList};

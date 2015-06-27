@@ -7,7 +7,6 @@ class ProductsService {
     const url = 'app/services/products.json';
     return this.$http.get(url);
   }
-
 }
 
 ProductsService.$inject = ['$http'];

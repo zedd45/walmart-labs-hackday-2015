@@ -1,0 +1,15 @@
+<section class="sc-club-list">
+  <div class="sc-club-item" ng-repeat="club in cc.clubs">
+    <div class="vcard">
+        <p class="fn">
+            <a class="url" href="#">{{club.City}} Sam's Club</a>
+        </p>
+        <p class="adr">
+            <span class="street-address">{{club.Address1}}</span><br>
+            <span class="region">{{club.city}}, {{club.State}}</span><br>
+            <span class="postal-code">{{club.PostalCode}}</span><br>
+        </p>
+        <p class="tel">{{club.PhoneNumber}}</p>
+    </div>
+  </div>
+</section>

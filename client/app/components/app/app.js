@@ -5,6 +5,7 @@ let App = () => {
     template: `
       <div>
         <speech-recognition></speech-recognition>
+        <club-listing></club-listing>
       </div>
     `
   }
