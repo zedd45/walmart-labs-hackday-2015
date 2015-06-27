@@ -1,7 +1,10 @@
 class ProductsController {
   constructor (productsService) {
+    const products = [];
+    this.products = products;
+
     this.productsService = productsService;
-    this.items = [];
+    // TODO: this call should be tied to speech detection!
     this.fetchProducts();
   }
 
@@ -11,7 +14,7 @@ class ProductsController {
         console.log('results: ', results);
         // like backbone's `parse`; for rendering,
         // we only care about a subset of the properties ATG sends back :)
-        this.items = results.p;
+        this.products = results.p;
       })
       .error( err => {
         console.error("unable to retrieve products: ", err);
