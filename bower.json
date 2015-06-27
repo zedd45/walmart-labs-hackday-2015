@@ -1,0 +1,26 @@
+{
+  "name": "walmart-labs-hackday-2015",
+  "version": "0.1.0",
+  "authors": [
+    "Chris Keen <christopher.keen@gmail.com>"
+  ],
+  "description": "walmart labs hack day",
+  "main": "./client/bundle.js",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "hackday"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "annyang": "~1.6.0"
+  }
+}

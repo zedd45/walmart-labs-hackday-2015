@@ -7,7 +7,7 @@ import {SpeechRecognition} from './components/speech/speech';
 import {ProductsService} from './services/productsService';
 
 angular.module('app', [
-    MotionDetection.name
+    SpeechRecognition.name
 ])
 .directive('app', App)
 .service('ProductsService', ProductsService);

@@ -1,7 +1,8 @@
-node_modules
+node_modules/
 client/bundle.js
 client/bundle.js.map
 *.log
 .DS_Store
 .sublime-project
 .sublime-workspace
+bower_components/

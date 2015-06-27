@@ -1,14 +1,14 @@
-import template from './motion.html';
+import template from './speech.html';
+import {SpeechController as controller} from './speech.controller';
 
-let MotionComponent = () => {
+let SpeechComponent = () => {
     return {
         restrict: 'E',
         template,
-        replace: true,
-        link: function (scope, element, attrs) {
-            debugger;
-        },
+        // replace: true,
+        controller,
+        controllerAs: 'sc',
     };
 };
 
-export {MotionComponent};
+export {SpeechComponent};

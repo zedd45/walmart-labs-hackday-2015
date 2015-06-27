@@ -4,7 +4,7 @@ let App = () => {
     replace: true,
     template: `
       <div>
-        <motion-area></motion-area>
+        <speech-recognition></speech-recognition>
       </div>
     `
   }
