@@ -1,5 +1,4 @@
 import annyang from 'annyang';
-debugger;
 
 const commands = {
     'get :product': 'locateProduct',

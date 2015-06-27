@@ -28,7 +28,7 @@
   "dependencies": {
     "angular": "^1.4.1",
     "angular-sanitize": "^1.4.1",
-    "annyang": "^1.0.1",
+    "annyang": "git@github.com:TalAter/annyang.git#master",
     "jeet": "^6.1.2",
     "normalize.css": "^3.0.3"
   }
