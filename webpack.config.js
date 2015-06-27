@@ -29,7 +29,7 @@ module.exports = {
         {
             test: /annyang\.js$/,
             // annyang needs the window context to detect which speech recog.
-            loader: "script!"
+            loader: "script?this=window"
         },
       ]
     },
