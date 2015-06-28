@@ -2,15 +2,19 @@ import annyang from 'annyang';
 
 class SpeechController {
     constructor (productsService, clubLocatorService) {
+
+        let showProduct = this.showProduct.bind(this);
+        let locateClub = this.locateClub.bind(this);
+
         const commands = {
-            'show me *product': this.showProduct,
-            'find a club': this.locateClub
+            'show me *product': showProduct,
+            'find a club': locateClub,
         };
 
         this.productsService = productsService;
         this.clubLocatorService = clubLocatorService;
 
-        window.annyang.init(commands, false);
+        window.annyang.addCommands(commands);
     }
 
     start () {
@@ -20,19 +24,20 @@ class SpeechController {
         window.annyang.start();
     }
 
+    stop () {
+        this.debugOff();
+        window.annyang.abort();
+    }
+
     pause () {
         window.annyang.pause();
     }
 
-    close () {
-        window.annyang.abort();
-    }
-
     debug () {
-        window.annyang.debug(__DEV__);
+        window.annyang.debug(true);
     }
 
-    stopDebug () {
+    debugOff () {
         window.annyang.debug(false);
     }
 
@@ -46,11 +51,8 @@ class SpeechController {
     }
 
     getClubs (location) {
-        let coords = location && location.coords;
-        this.clubLocatorService.getClubsNear(coords).success(function (data) {
-            debugger;
-            this.clubs = data;
-        });
+        let coords = location && location.coords || null;
+        this.clubLocatorService.getClubsNear(coords);
     }
 }
 

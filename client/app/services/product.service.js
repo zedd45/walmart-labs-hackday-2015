@@ -19,9 +19,8 @@ class ProductsService {
   }
 
   getProducts (searchString) {
-    // TODO: replace with search service from mWeb
-    // http://m.samsclub.com/api/sams/samsapi/v1/searchService?loadType=full&sortBy=2&pageSize=10&class=category&sortDirection=1&cnpApp=false&filter=all&pageNum=1&txt=speaker
-    // http://mobility.samsclub.com/samsapi/v1/searchService?loadType=full&sortBy=2&pageSize=10&class=category&sortDirection=1&cnpApp=false&filter=all&pageNum=1&txt=speaker
+    // const url = `http://m.samsclub.com/api/sams/samsapi/v1/searchService?loadType=full&sortBy=2&pageSize=10&class=category&sortDirection=1&cnpApp=false&filter=all&pageNum=1&txt=${searchString}`;
+    // const url = `http://mobility.samsclub.com/samsapi/v1/searchService?loadType=full&sortBy=2&pageSize=10&class=category&sortDirection=1&cnpApp=false&filter=all&pageNum=1&txt=${searchString}`;
     const url = 'app/components/product/products.json';
     let results = this.$http.get(url)
           .success(results => {

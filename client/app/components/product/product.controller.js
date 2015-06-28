@@ -12,12 +12,6 @@ class ProductsController {
   fetchProducts () {
     this.productsService.getProducts();
   }
-
-  addToCart (item) {
-    if (__DEV__) {
-        console.log('added to cart... should increment something...');
-    }
-  }
 }
 
 ProductsController.$inject = ['ProductsService', '$rootScope'];
