@@ -11,18 +11,17 @@ class ProductsService {
     this.$rootScope = $rootScope;
 
     const products = [];
-    const observerCallbacks = [];
-
     this.products = products;
-    this.observerCallbacks = observerCallbacks;
   }
 
   notifyObservers () {
     this.$rootScope.$broadcast('products:updated', this.products);
   }
 
-  getProducts () {
+  getProducts (searchString) {
     // TODO: replace with search service from mWeb
+    // http://m.samsclub.com/api/sams/samsapi/v1/searchService?loadType=full&sortBy=2&pageSize=10&class=category&sortDirection=1&cnpApp=false&filter=all&pageNum=1&txt=speaker
+    // http://mobility.samsclub.com/samsapi/v1/searchService?loadType=full&sortBy=2&pageSize=10&class=category&sortDirection=1&cnpApp=false&filter=all&pageNum=1&txt=speaker
     const url = 'app/components/product/products.json';
     let results = this.$http.get(url)
           .success(results => {

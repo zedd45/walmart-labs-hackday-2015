@@ -6,7 +6,6 @@ class ProductsController {
   }
 
   updateProducts (e, data) {
-    debugger;
     this.products = data;
   }
 
@@ -15,7 +14,9 @@ class ProductsController {
   }
 
   addToCart (item) {
-    console.log('added to cart... should increment something...');
+    if (__DEV__) {
+        console.log('added to cart... should increment something...');
+    }
   }
 }
 
