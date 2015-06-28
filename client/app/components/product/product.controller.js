@@ -1,25 +1,17 @@
 class ProductsController {
-  constructor (productsService) {
-    const products = [];
-    this.products = products;
-
+  constructor (productsService, $rootScope) {
+    let update = this.updateProducts.bind(this);
     this.productsService = productsService;
+    $rootScope.$on('products:updated', update);
+  }
+
+  updateProducts (e, data) {
+    debugger;
+    this.products = data;
   }
 
   fetchProducts () {
-    this.productsService.getProducts()
-      .success(results => {
-        if (__DEV__) {
-          console.log('results: ', results);
-        }
-        // like backbone's `parse`; for rendering,
-        // we only care about a subset of the properties ATG sends back :)
-        this.products = results.p;
-      })
-      .error( err => {
-        console.error("unable to retrieve products: ", err);
-      });
-
+    this.productsService.getProducts();
   }
 
   addToCart (item) {
@@ -27,6 +19,6 @@ class ProductsController {
   }
 }
 
-ProductsController.$inject = ['ProductsService'];
+ProductsController.$inject = ['ProductsService', '$rootScope'];
 
 export {ProductsController};

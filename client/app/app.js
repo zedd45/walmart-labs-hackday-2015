@@ -10,7 +10,7 @@ import {ClubListing} from './components/club/club';
 
 // services
 import {ClubLocatorService} from './services/clubLocatorService';
-import {ProductsService} from './components/product/product.service';
+import {ProductsService} from './services/product.service';
 
 angular.module('app', [
     SpeechRecognition.name,
