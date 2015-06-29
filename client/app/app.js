@@ -1,5 +1,3 @@
-import 'normalize.css';
-import './app.styl';
 import angular from 'angular';
 
 // components
@@ -11,6 +9,8 @@ import {ClubListing} from './components/club/club';
 // services
 import {ClubLocatorService} from './services/clubLocatorService';
 import {ProductsService} from './services/product.service';
+
+$.material.init();
 
 angular.module('app', [
     SpeechRecognition.name,

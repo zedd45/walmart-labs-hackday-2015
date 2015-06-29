@@ -21,6 +21,7 @@
     "tests"
   ],
   "dependencies": {
-    "annyang": "~1.6.0"
+    "annyang": "~1.6.0",
+    "bootstrap-material-design": "~0.3.0"
   }
 }

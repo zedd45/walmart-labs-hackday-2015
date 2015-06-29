@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     webpack = require('webpack-stream'),
     serve = require('browser-sync'),
+    browserSyncSpa = require('browser-sync-spa'),
     sequence = require('run-sequence');
 
 var paths = {
@@ -34,9 +35,17 @@ gulp.task('serve', function() {
     open: true,
     port: 4500,
     server: {
-      baseDir: 'client'
+      baseDir: 'client',
+      routes: {
+        '/bower_components': 'bower_components',
+        '/node_modules': 'node_modules'
+      }
     }
   });
+
+  serve.use(browserSyncSpa({
+    selector: '[ng-app]'// Only needed for angular apps
+  }));
 });
 
 gulp.task('watch', function () {

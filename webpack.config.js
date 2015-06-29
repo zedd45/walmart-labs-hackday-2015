@@ -24,13 +24,13 @@ module.exports = {
         },
         {
           test: /\.css$/,
-          loader: 'css'
+          loader: 'css!autoprefixer?browsers=last 2 versions'
         },
         {
             test: /annyang\.js$/,
             // annyang needs the window context to detect which speech recog. to use
             loader: "script?this=window"
-        },
+        }
       ]
     },
 
