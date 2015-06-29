@@ -3,7 +3,11 @@ the original idea being to use the speech dialog built in
 <input type="text" x-webkit-speech="x-webkit-speech" />
 -->
 
-<button type="button" class="btn btn-success" ng-click="speech.start()">
-<!-- <button ng-click="speech.showProduct()"> -->
-  <i class="fa fa-microphone"></i> Speak to me
-</button>
+<div class="text-center">
+  <button type="button" class="btn btn-success btn-raised" ng-click="speech.start()">
+  <!-- <button ng-click="speech.showProduct()"> -->
+    <i class="fa fa-microphone"></i>
+    <span>Speak to me</span>
+    <div class="ripple-wrapper"></div>
+  </button>
+</div>
