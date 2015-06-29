@@ -8,8 +8,13 @@ class SpeechController {
         let locateClub = this.locateClub.bind(this);
 
         const commands = {
+            // product aliases
             'show *product': showProduct,
+            'display *product': showProduct,
+            'search for *product': showProduct,
+            // club aliases
             'find a club': locateClub,
+            'locate a club': locateClub,
         };
 
         this.productsService = productsService;
@@ -42,9 +47,9 @@ class SpeechController {
         window.annyang.debug(false);
     }
 
-    showProduct () {
+    showProduct (product) {
         this.pause();
-        this.productsService.getProducts();
+        this.productsService.getProducts(product);
     }
 
     locateClub () {

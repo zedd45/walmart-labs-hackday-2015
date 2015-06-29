@@ -19,7 +19,13 @@ class ProductsService {
   getProducts (searchString) {
     // const url = `http://m.samsclub.com/api/sams/samsapi/v1/searchService?loadType=full&sortBy=2&pageSize=10&class=category&sortDirection=1&cnpApp=false&filter=all&pageNum=1&txt=${searchString}`;
     // const url = `http://mobility.samsclub.com/samsapi/v1/searchService?loadType=full&sortBy=2&pageSize=10&class=category&sortDirection=1&cnpApp=false&filter=all&pageNum=1&txt=${searchString}`;
-    const url = 'app/components/product/products.json';
+
+    const mapping = {
+      drinks: ["gatoraid", "gatorade"]
+    };
+
+    const url = `app/services/products.${searchString}.json`;
+
     let results = this.$http.get(url)
           .success(results => {
 
@@ -33,7 +39,8 @@ class ProductsService {
             this.notifyObservers();
           })
           .error( err => {
-            console.error("unable to retrieve products: ", err);
+            // console.error("unable to retrieve products: ", err);
+            alert('unable to find product: ' + searchString + ".  Please try again.");
           });;
 
     return results;
