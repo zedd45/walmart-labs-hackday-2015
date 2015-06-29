@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 // components
-import {App} from './components/app/app';
+import {AppComponent} from './components/app/app.component';
 import {SpeechRecognition} from './components/speech/speech';
 import {ProductListing} from './components/product/product';
 import {ClubListing} from './components/club/club';
@@ -17,6 +17,6 @@ angular.module('app', [
     ProductListing.name,
     ClubListing.name,
 ])
-.directive('app', App)
+.directive('app', AppComponent)
 .service('ProductsService', ProductsService)
 .service('ClubLocatorService', ClubLocatorService);

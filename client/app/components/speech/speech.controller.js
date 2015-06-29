@@ -8,7 +8,7 @@ class SpeechController {
         let locateClub = this.locateClub.bind(this);
 
         const commands = {
-            'show me *product': showProduct,
+            'show *product': showProduct,
             'find a club': locateClub,
         };
 
@@ -43,10 +43,12 @@ class SpeechController {
     }
 
     showProduct () {
+        this.pause();
         this.productsService.getProducts();
     }
 
     locateClub () {
+        this.pause();
         let callback = this.getClubs.bind(this);
         let position = navigator.geolocation && navigator.geolocation.getCurrentPosition(callback);
     }
