@@ -2,10 +2,14 @@
   <ul>
     <li ng-repeat="product in pc.products">
         <img class="img-responsive" ng-src="{{product.li}}" alt="{{product.n}}">
-        <h2>{{product.n}}</h2>
+        <h3>{{product.n}}</h3>
         <h4 ng-bind-html="product.sd"></h4>
-        <p>{{product.dp}}</p>
-        <button class="btn btn-material-red-500 btn-raised" ng-click="products.addToCart(p)">BUY</button>
+        <div class="row">
+          <div class="col-xs-6" style="font-size: 200%">{{product.dp}}</div>
+          <div class="col-xs-6">
+            <button class="btn btn-material-red-500 btn-raised" ng-click="products.addToCart(p)">BUY</button>
+          </div>
+        </div>
     </li>
   </ul>
 </section>

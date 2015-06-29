@@ -1,10 +1,21 @@
 .sc-product
   ul
     list-style-type: none
+    margin: 10px 0
+    padding: 0 15px
 
     li
       display inline-block
-      width 33%
+      width: 100%
       vertical-align top
+      padding: 10px
+      margin-bottom: 10px
+      border-bottom: 1px solid rgba(0,0,0,0.5)
+      &:last-of-type
+        border-bottom: none
+
+      @media screen and (min-width: 768px)
+        width 33%
+
 
 
