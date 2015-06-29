@@ -2,14 +2,17 @@
   <div class="sc-club-item" ng-repeat="club in cc.clubs">
     <div class="vcard">
         <p class="fn">
-            <a class="url" href="#">{{club.City}} Sam's Club</a>
+            <i class="fa fa-map-marker"></i> <a class="url" href="#">{{club.City}} Sam's Club</a>
         </p>
+
         <p class="adr">
             <span class="street-address">{{club.Address1}}</span><br>
             <span class="region">{{club.city}}, {{club.State}}</span><br>
             <span class="postal-code">{{club.PostalCode}}</span><br>
         </p>
-        <p class="tel">{{club.PhoneNumber}}</p>
+        <p class="tel">
+          <a href="tel:1231231234">{{club.PhoneNumber}}</a>
+        </p>
     </div>
   </div>
 </section>
