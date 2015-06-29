@@ -34,4 +34,7 @@ After pressing the listen button, the following commands are available:
         locate a club
 
 
-The club locator will ask for your location, but the service is based on JSON fixtures, of which there is presently only one...
+## Caveats
+
+1. Product search currently only supports three items: `Ramen [noodles]`, `Gatorade`, and `speakers`.  Ramen or Ramen noodles will work.
+2. The club locator will ask for your location, but the service is based on JSON fixtures, of which there is presently only one...
