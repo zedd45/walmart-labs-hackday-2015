@@ -7,8 +7,8 @@ let AppComponent = () => {
     restrict: 'E',
     replace: true,
     template,
-    // controller,
-    // controllerAs: 'ac',
+    controller,
+    controllerAs: 'ac',
   }
 }
 
