@@ -1,8 +1,11 @@
-<section class="sc-product">
-  <div ng-repeat="product in pc.products">
-      <h2>{{product.n}}</h2>
-      <h4 ng-bind-html="product.sd"></h4>
-      <p>{{product.dp}}</p>
-      <button ng-click="products.addToCart(p)">buy now</button>
-  </div>
+<section class="sc-product row">
+  <ul>
+    <li ng-repeat="product in pc.products">
+        <img class="img-responsive" ng-src="{{product.li}}" alt="{{product.n}}">
+        <h2>{{product.n}}</h2>
+        <h4 ng-bind-html="product.sd"></h4>
+        <p>{{product.dp}}</p>
+        <button class="btn btn-material-red-500 btn-raised" ng-click="products.addToCart(p)">BUY</button>
+    </li>
+  </ul>
 </section>
