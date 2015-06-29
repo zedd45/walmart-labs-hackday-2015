@@ -16,7 +16,7 @@ Install [Node JS](http://nodejs.org/), which currently includes `npm`.
 # Running the app
 
 ```
-npm i && npm run serve
+npm i && bower i && npm run serve
 ```
 
 ## Speech Commands
