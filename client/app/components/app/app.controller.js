@@ -28,13 +28,11 @@ class AppController {
 
 
   clubsUpdated () {
-    debugger;
     this.showClubs = true;
     this.showProducts = false;
   }
 
   productsUpdated () {
-    debugger;
     this.showProducts = true;
     this.showClubs = false;
   }
