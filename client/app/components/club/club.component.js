@@ -7,7 +7,7 @@ let ClubComponent = () => {
         template,
         replace: true,
         controller,
-        controllerAs: 'club',
+        controllerAs: 'cc',
     };
 };
 

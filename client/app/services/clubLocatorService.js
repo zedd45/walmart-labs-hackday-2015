@@ -1,12 +1,30 @@
 class ClubLocatorService {
 
-  constructor($http) {
+  constructor($http, $rootScope) {
     this.$http = $http;
+    this.$rootScope = $rootScope;
+    this.clubs = [];
+  }
+
+  notifyObservers () {
+    this.$rootScope.$broadcast('clubs:updated', this.clubs);
   }
 
   getClubsNear () {
     const url = 'app/services/clubs.json';
-    return this.$http.get(url);
+    let results = this.$http.get(url)
+          .success(results => {
+
+            if (__DEV__) {
+              console.log('results: ', results);
+            }
+
+            this.clubs = results;
+            this.notifyObservers();
+          })
+          .error( err => {
+            console.error("unable to retrieve clubs: ", err);
+          });;
   }
 
   /* even with m.samsclub.com in our host file, this won't work; need the api keys
@@ -27,6 +45,6 @@ class ClubLocatorService {
   */
 }
 
-ClubLocatorService.$inject = ['$http'];
+ClubLocatorService.$inject = ['$http', '$rootScope'];
 
 export {ClubLocatorService};

@@ -3,6 +3,7 @@ import annyang from 'annyang';
 class SpeechController {
     constructor (productsService, clubLocatorService) {
 
+        // TODO: can we just use fat arrow to bind this scope (by returning an object)?
         let showProduct = this.showProduct.bind(this);
         let locateClub = this.locateClub.bind(this);
 

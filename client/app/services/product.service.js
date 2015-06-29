@@ -9,9 +9,7 @@ class ProductsService {
   constructor($http, $rootScope) {
     this.$http = $http;
     this.$rootScope = $rootScope;
-
-    const products = [];
-    this.products = products;
+    this.products = [];
   }
 
   notifyObservers () {
