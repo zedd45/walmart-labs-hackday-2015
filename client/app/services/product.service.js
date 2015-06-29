@@ -17,12 +17,19 @@ class ProductsService {
   }
 
   getProducts (searchString) {
-    // const url = `http://m.samsclub.com/api/sams/samsapi/v1/searchService?loadType=full&sortBy=2&pageSize=10&class=category&sortDirection=1&cnpApp=false&filter=all&pageNum=1&txt=${searchString}`;
+    // TODO: wire up to the real endpoint
     // const url = `http://mobility.samsclub.com/samsapi/v1/searchService?loadType=full&sortBy=2&pageSize=10&class=category&sortDirection=1&cnpApp=false&filter=all&pageNum=1&txt=${searchString}`;
 
-    const mapping = {
-      drinks: ["gatoraid", "gatorade"]
-    };
+    searchString = searchString.toLowerCase();
+
+    let mapping = {
+      "ramen noodles": "ramen",
+    }
+
+    // guard against common nicknames, since we're using flat JSON files
+    if (searchString in mapping) {
+      searchString = mapping[searchString];
+    }
 
     const url = `app/services/products.${searchString}.json`;
 
