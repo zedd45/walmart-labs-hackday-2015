@@ -7,6 +7,9 @@ Walmart Labs sponsors a weekend of hacking on an idea you have.
 
 Our idea was to create a service that allows speech input to search for Sam's Clubs locations or products.
 
+# Underling Technology
+
+Walmart sent us to Angular U, and there was a workshop where we leanred to use Angular 1.4 + ES6 using Webpack and Babel.  We adapted this approach for this exercise. 
 
 # Installation
 
